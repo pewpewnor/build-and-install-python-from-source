@@ -1,12 +1,19 @@
 # How to Build & Install CPython From Source On Linux
 
-## Download The Source Code
+## TL;DR
+- Download desired Python source code from https://www.python.org/ftp/python/
+- Extract archive and cd into the directory
+- `./configure --enable-optimizations --with-ensurepip=install`
+- `make -j <number of processors>`
+- `sudo make altinstall`
+
+## 1. Download The Source Code
 
 - Go to https://www.python.org/ftp/python/
 - Select a Python version, and dowload the source code archive
 - Extract the archive and `cd` into the directory
 
-## Install Build Prerequisites
+## 2. Install Build Prerequisites
 
 - On Ubuntu:
 ```console
@@ -16,7 +23,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
   llvm
 ```
 
-## Configure The Python Build
+## 3. Configure The Python Build
 
 ### Recommended:
 ```console
@@ -33,7 +40,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 
 You can also enable and disable features such as `--disable-gil`
 
-## Compile
+## 4. Compile
 
 compile with a single processor:
 ```console
@@ -52,7 +59,7 @@ or (with number of processors = half of your CPU cores):
 make -j $(($(nproc) / 2))
 ```
 
-## Install
+## 5. Install
 
 ### Recommended:
 ```console
