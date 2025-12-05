@@ -58,7 +58,7 @@ make -j $(($(nproc) / 2))
 sudo make altinstall
 ```
 
-This will install your Python to `/usr/local/bin/`.
+This will install your Python to `/usr/local/bin/`
 
 ## Not Recommended
 
