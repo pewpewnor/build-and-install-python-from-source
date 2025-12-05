@@ -1,4 +1,4 @@
-# How to Build & Install Python
+# How to Build & Install Python From Source
 
 ## Download The Source Code
 
