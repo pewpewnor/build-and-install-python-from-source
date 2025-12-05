@@ -9,7 +9,7 @@
 ## Install Build Prerequisites
 
 - On Ubuntu:
-```sh
+```console
 sudo apt install -y make build-essential libssl-dev zlib1g-dev \
   libbz2-dev libreadline-dev libsqlite3-dev wget curl \
   libncurses5-dev libncursesw5-dev xz-utils tk-dev liblzma-dev \
@@ -19,7 +19,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 ## Configure The Python Build
 
 ### Recommended:
-```sh
+```console
 ./configure --enable-optimizations --with-ensurepip=install
 ```
 
@@ -27,7 +27,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 - `--with-ensurepip=install` ensures your Python build would automatically contain the `pip` and `venv` module
 
 ### Other Flags:
-```sh
+```console
 ./configure --help
 ```
 
@@ -35,26 +35,26 @@ You can also enable and disable features such as `--disable-gil`
 
 ## Compile
 
-```sh
+```console
 make
 ```
 or
-```sh
+```console
 make -j <number of processors>
 ```
 or
-```sh
+```console
 make -j $(nproc)
 ```
 or
-```sh
+```console
 make -j $(($(nproc) / 2))
 ```
 
 ## Install
 
 ### Recommended:
-```sh
+```console
 sudo make altinstall
 ```
 
@@ -62,4 +62,4 @@ This will install your Python to `/usr/local/bin/`
 
 ### Not Recommended:
 
-`sudo make install` will replace your system's `python3`, which can break your system if it depends on that specific Python (e.g. `GNOME`)
+`console sudo make install` will replace your system's `python3`, which can break your system if it depends on that specific Python (e.g. `GNOME`)
