@@ -24,6 +24,8 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
   llvm
 ```
 
+Using `clang-19` or above is preffered for better interpreter optimizations
+
 ## 3. Configure The Python Build
 
 ### Recommended:
