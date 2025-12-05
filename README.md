@@ -45,7 +45,7 @@ You can also enable and disable features such as `--disable-gil`
 
 ## 4. Compile
 
-compile with a single processor:
+Compile with a single processor:
 ```console
 make
 ```
