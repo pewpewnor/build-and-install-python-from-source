@@ -41,7 +41,7 @@ Using `clang-19` or above is preffered for better interpreter optimizations
 ./configure --help
 ```
 
-You can also enable and disable features such as `--disable-gil`
+You can also enable and disable features such as `--disable-gil` or do `--enable-shared` to create libpython .so file
 
 Maximum optimizated build for your specific machine (significantly increases compile time):
 ```console
